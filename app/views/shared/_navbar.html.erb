@@ -3,6 +3,18 @@
     <%= image_tag 'https://picsum.photos/200/200', alt: 'logo' %>
   <% end %>
 
+  <form action="" class='flex-area' id="search-form">
+    <formgroup class="flex-area flex-col space-between">
+      <label for="from">From</label>
+      <input type="text" name="from">
+    </formgroup>
+    <formgroup class="flex-area flex-col space-between">
+      <label for="to">To</label>
+      <input type="text" name="to">
+    </formgroup>
+    <input type="submit" value="Search" id='search-button' class='btn btn-success'>
+  </form>
+
   <div class="navbar-basic-item">
     <div class="dropdown">
       <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
